@@ -7,5 +7,5 @@ WORKDIR /data
 
 EXPOSE 5678
 
-# Commande correcte pour les versions récentes
+# CMD pour lancer n8n (sans "start")
 CMD ["n8n"]
