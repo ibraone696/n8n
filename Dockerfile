@@ -12,4 +12,3 @@ EXPOSE 5678
 
 # Lancer n8n
 CMD ["n8n", "start"]
-
