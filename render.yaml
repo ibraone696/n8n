@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: n8n
+    env: docker
+    plan: free
+    envVars:
+      - key: PORT
+        value: 5678
+      - key: DB_TYPE
+        value: postgresdb
+      - key: DB_POSTGRESDB_HOST
+        value: dpg-d3svi195pdvs73fufv3g-a.render.com
+      - key: DB_POSTGRESDB_PORT
+        value: 5432
+      - key: DB_POSTGRESDB_DATABASE
+        value: n8n_back_up
+      - key: DB_POSTGRESDB_USER
+        value: n8n_back_up_user
+      - key: DB_POSTGRESDB_PASSWORD
+        value: BUzbsK5iBoBlYNVfUknFyY8wAx8nGd23
+      - key: N8N_ENCRYPTION_KEY
+        value: ae93fbd8d0a41f8e7bdf0dc93a998ba4c70c5b2a5a1a5c
+      - key: WEBHOOK_URL
+        value: https://n8n-pz4l.onrender.com/
+      - key: N8N_HOST
+        value: 0.0.0.0
+      - key: N8N_PORT
+        value: 5678
