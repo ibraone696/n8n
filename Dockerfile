@@ -1,14 +1,15 @@
-# Étape 1 : Utiliser une image Node stable
+# Utiliser Node 18
 FROM node:18
 
-# Étape 2 : Installer n8n globalement
+# Installer n8n globalement
 RUN npm install -g n8n
 
-# Étape 3 : Créer le dossier de travail
+# Créer le dossier de travail
 WORKDIR /data
 
-# Étape 4 : Exposer le port d’écoute de n8n
+# Exposer le port d'écoute
 EXPOSE 5678
 
-# Étape 5 : Lancer n8n
+# Lancer n8n
 CMD ["n8n", "start"]
+
